@@ -88,6 +88,3 @@ This Project is unlicensed
 
 * Hat tip to UCLA coding bootcamp 2017
 * Twitter and meetup is the initial inspiration for this project
-
-
-0
