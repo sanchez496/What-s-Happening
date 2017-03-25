@@ -8,37 +8,43 @@
 	<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 <body>
+  <video id="bgvid" playsinline autoplay muted loop>
+           <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+           <source src="los_angeles.mp4" type="video/mp4">
+  </video>
 	<div class="container-nav">
-		<!-- <div class="jumbotron"> -->
-		
-  				<div class="col-md-4">
-  				<h1> Miguel Rocks</h1>
-  				</div>
-  				<div class="col-md-4">
-  				<h1> Mike O-MG is Dope</h1>
-  				</div>
-  				<div class="col-md-4">
-  				<h1> Sanchez is kina OK</h1>
-  				</div>
-		<!-- <form class="navbar-form navbar-center" role="search">
-  			<div class="form-group">
-  			<div class="col-md-4">
-    			<input type="text" class="form-control" placeholder="Search">
-    		</div>	
-  			</div>
-  			<button type="submit" class="btn btn-default">Submit</button>
-		</form>
-		<form class="navbar-form navbar" role="search">
-			<div class="col-md-4">
-  			<div class="form-group">
-    			<input type="text" class="form-control" placeholder="Search">
-    		</div>	
-  			</div>
-  			<button type="submit" class="btn btn-default">Submit</button>
-		</form> -->
-		<!-- </div> -->
+    <div class="col-md-4">
+        <div class="username">
+        <h2> DISPLAY USER NAME </h2>
+        </div>
+    </div>
+    <div class="col-md-4">
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    <div class="col-md-4">
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Dropdown
+        <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><a href="#">Logout</a></li>
+          <li><a href="#">Update Profile</a></li>
+          <li><a href="#">Settings</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>
+  	</div>
+		</div>
 	</div>
-
+  <br>
+  <div class="col-md-12"></div>
 	<div class="container-main">
 		<div class="row">
     		<div class="col-md-4">
@@ -55,7 +61,7 @@
     			<div class="twit-contatiner">
       			<a class="twitter-timeline" data-lang="en" data-width="350" data-height="300" data-dnt="true" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/latimesfood">Tweets by latimesfood</a>
       			<a class="twitter-timeline" data-width="400" data-height="300" data-dnt="true" data-theme="light" data-link-color="#19CF86"  href="https://twitter.com/top5hashtags">Tweets by top5hashtags</a> 
-      			</div>
+      		</div>
       		<!-- <div w-type="event-discovery" w-tmapikey="5QGCEXAsJowiCI4n1uAwMlCGAcSNAEmG" w-googleapikey="AIzaSyBQrJ5ECXDaXVlICIdUBOe8impKIGHDzdA" w-keyword="" w-theme="simple" w-colorscheme="light" w-width="400" w-height="600" w-size="10" w-border="0" w-borderradius="4" w-postalcode="" w-radius="" w-country="" w-period="week" w-layout="vertical" w-attractionid="" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid="" w-proportion="custom" w-titlelink="off" w-countrycode="US" w-source="" w-postalcodeapi="90010" w-latlong=""></div> -->
     		</div>
   		</div>

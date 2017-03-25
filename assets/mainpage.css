@@ -1,0 +1,38 @@
+.container-nav {
+	/*align-content: center;*/
+	text-align: center;
+	margin: 0px 50px 0px 50px;
+	padding: 30px 0px 0px 0px;
+}	
+
+.container-main {
+	/*background-color: blue;*/
+	margin: 0px 50px 0px 50px;
+	
+}
+body{
+	background-image: url("los-angeles.jpg");
+}
+.col-md-4 {
+	/*border-style: solid;
+	border-color: grey;*/
+
+}
+
+.twit-contatiner {
+	margin: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: grey;
+	opacity: .9;
+}
+
+#dropdownMenu1 {
+	float: right;
+	margin: 8px 0px 0px 0px;
+}
+.username{
+	color: white;
+}
+h2 {
+	margin: 8px 0px 30px 0px
+}
