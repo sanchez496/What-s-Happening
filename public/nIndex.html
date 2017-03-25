@@ -6,6 +6,8 @@
     <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="http://api.eventful.com/js/api"></script>
     <script type="text/javascript">
+        var input = $("#data");
+
         function show_alert() {
             var app_key = document.getElementById("app_key");
             var oArgs = {
@@ -34,8 +36,21 @@
                 within: within.value,
             };
             EVDB.API.call("/events/search", oArgs, function(oData) {
+
+                var mData = JSON.stringify(oData);
+                var nData = JSON.parse(mData);
+                console.log(nData);
+                var events = nData.events.event[0].venue_name;
+                console.log(events);
+                var p = $("<p>").text("Events are: " + events);
+                var eventDiv = $("<div class='events'>");
+                eventDiv.append(p);
+                $("#data").prepend(eventDiv);
+
+                /*
                 console.log("your myObject is " + JSON.stringify(oData));
                 console.log(oData);
+                */
             });
         }
     </script>
@@ -50,7 +65,7 @@
     
     #weather h2 {
         margin: 0 0 8px;
-        color: #fff;
+        color: burlywood;
         font-size: 150px;
         font-weight: 300;
         text-align: center;
@@ -83,7 +98,7 @@
     <input type="button" onclick="show_alert()" value="Single Event Lookup " /> <br>
     <input type="button" onclick="show_alert2()" value="Filtered query " /> <br>
     <br>
-    <br> And here is the sample code:
+    <br> And here is the sample code:<span id="data"></span>
     <div id="weather"></div>
     <script src="https://cdn.rawgit.com/monkeecreate/jquery.simpleWeather/master/jquery.simpleWeather.min.js"></script>
     <script type="text/javascript">
