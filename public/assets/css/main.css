@@ -127,6 +127,8 @@
  .form-signin input[type=password],
  .form-signin input[type=text],
  .form-signin button {
+     color: white;
+     font-size: medium;
      width: 100%;
      display: block;
      z-index: 1;

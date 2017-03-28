@@ -1,0 +1,11 @@
+{
+    "users": {
+        "alovelace": {
+            "displayName": "Ada Lovelace",
+            "email": "alovelace@gmail.com",
+            "zipCode": "90505"
+        },
+        "ghopper": {},
+        "eclarke": {}
+    }
+}
